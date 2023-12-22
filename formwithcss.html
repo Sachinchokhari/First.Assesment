@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" pattern="[a-zA-Z]{3,6}" required placeholder="Enter your first name"><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" pattern="[a-zA-Z]{3,6}" required placeholder="Enter your last name"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="It should contain @..."><br>
+
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required placeholder="Only 10 digits are allowed"><br>
+
+        <label for="gender">Gender:</label>
+        
+            <label><input type="radio" name="gender" class="s"> Male</label>
+            <label><input type="radio" name="gender" class="s"> Female</label>
+    <br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br>
+
+        <label for="pin">Area PIN:</label>
+        <input type="text" id="pin" name="pin" required><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required><br>
+
+        <label for="qualification">Qualification:</label>
+        <input type="text" id="qualification" name="qualification" required><br>
+
+      
+        <label for="specialization">Specialization:</label>
+        <div class="specialization-container">
+            <input type="radio" name="specialization" id="cs" ><label for="cs">Computer Science</label><br>
+            <input type="radio" name="specialization" id="it"><label for="it">Information Technology</label><br>
+            <input type="radio" name="specialization" id="ca"><label for="ca">Computer Architecture</label><br>
+            <input type="radio" name="specialization" id="tc"><label for="tc">Telecommunication</label><br>
+        </div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+<div class="center-button">
+        <input type="submit" value="Register" class="register-button">
+    </div>
+    </form>
+</body>
+<script>
+    Function validate(
+
+    )
+</script>
+</html>
